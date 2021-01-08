@@ -42,7 +42,7 @@
 		<!-- END: Page CSS-->
 		
 		<!-- BEGIN: Custom CSS-->
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>app-assets/css/style.css">
 		<!-- END: Custom CSS-->
 		
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>app-assets/vendors/css/tables/datatable/datatables.min.css">
