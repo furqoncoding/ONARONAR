@@ -95,7 +95,13 @@
 		public function email22()
 		{
 			
-			$jumlah = count($_POST["multiUpdate"]);
+			if(!isset($_POST["multiUpdate"])){
+				$multiUpdate=0;
+			} else{
+                $multiUpdate= $_POST["multiUpdate"];
+			}
+			
+			$jumlah = count($multiUpdate);
 			
 			$berhasil=0;
 			$gagal=1;
@@ -171,11 +177,12 @@
 			'mailtype' => 'html'
 			));
 			
+			$emailTo = array('dmanager@an.tv','onar@an.tv');
             $this->load->library('email');
             $this->email->set_newline("\r\n");   
 			
-			$this->email->from('tria.nusa@an.tv', 'Tria'); 
-			$this->email->to('tria.nusa@an.tv');
+			$this->email->from('onairReport@an.tv'); 
+			$this->email->to($emailTo);
 			$this->email->subject('On Air Report'); 
 			//$event_date = date('Y-m-d');
 			//!die($event_date);
@@ -215,12 +222,12 @@
 			'smtp_port' => 25,
 			'mailtype' => 'html'
 			));
-			
+			$emailTo = array('dmanager@an.tv','onar@an.tv');
             $this->load->library('email');
             $this->email->set_newline("\r\n");   
 			
-			$this->email->from('tria.nusa@an.tv', 'Tria'); 
-			$this->email->to('tria.nusa@an.tv');
+			$this->email->from('onairReport@an.tv'); 
+			$this->email->to($emailTo);
 			//$this->email->cc('nini@an.tv');
 			$this->email->subject('On Air Report');
 			
@@ -230,8 +237,12 @@
 			
 			//!die($event_date);
 			//$detail=$this->db->query("SELECT * FROM onar_v_report WHERE event_date='$event_date'")->result();
-			
-			$jumlah = count($_POST["multiUpdate"]);
+			if(!isset($_POST["multiUpdate"])){
+				$multiUpdate=0;
+			} else{
+                $multiUpdate= $_POST["multiUpdate"];
+			}
+			$jumlah = count( $multiUpdate);
 			
 			
 			
@@ -244,7 +255,7 @@
 			
 			
 			$data['jumlah']=$jumlah; 
-			$data['multiUpdate']=$_POST["multiUpdate"];
+			$data['multiUpdate']= $multiUpdate;
 			$data['date']=$date;
 			//$data['rows']=$detail; 
 			//$this->Mail_model->get_by_date($event_date);
