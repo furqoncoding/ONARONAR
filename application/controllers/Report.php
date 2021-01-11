@@ -178,11 +178,13 @@
 			));
 			
 			$emailTo = array('dmanager@an.tv','onar@an.tv');
+			$emailCC = array('nini@an.tv','yanto.iswanto@an.tv');
             $this->load->library('email');
             $this->email->set_newline("\r\n");   
 			
 			$this->email->from('onairReport@an.tv'); 
 			$this->email->to($emailTo);
+			$this->email->cc($emailCC);
 			$this->email->subject('On Air Report'); 
 			//$event_date = date('Y-m-d');
 			//!die($event_date);
@@ -223,11 +225,13 @@
 			'mailtype' => 'html'
 			));
 			$emailTo = array('dmanager@an.tv','onar@an.tv');
+			$emailCC = array('nini@an.tv','yanto.iswanto@an.tv');
             $this->load->library('email');
             $this->email->set_newline("\r\n");   
 			
 			$this->email->from('onairReport@an.tv'); 
 			$this->email->to($emailTo);
+			$this->email->cc($emailCC);
 			//$this->email->cc('nini@an.tv');
 			$this->email->subject('On Air Report');
 			
