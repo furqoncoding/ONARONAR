@@ -47,9 +47,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |				'ssl_key'    - Path to the private key file
 |				'ssl_cert'   - Path to the public key certificate file
 |				'ssl_ca'     - Path to the certificate authority file
-|				'ssl_capath' - Path to a directory containing trusted CA certificates in PEM format
+|				'ssl_capath' - Path to a directory containing trusted CA certificats in PEM format
 |				'ssl_cipher' - List of *allowed* ciphers to be used for the encryption, separated by colons (':')
-|				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not
+|				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not ('mysqli' only)
 |
 |	['compress'] Whether or not to use client compression (MySQL only)
 |	['stricton'] TRUE/FALSE - forces 'Strict Mode' connections
@@ -75,56 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '10.10.50.21',
-	'username' => 'tryme',
-	'password' => 'hacked',
-	'database' => 'onar',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => 'onar_',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => '10.10.50.21',
-	'username' => 'tryme',
-	'password' => 'hacked',
-	'database' => 'onar',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => 'onar_',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-$db['dbhcis'] = array(
-	'dsn'	=> '',
-	'hostname' => '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.4.7)(PORT=1521))(CONNECT_DATA=(SID=GEN21BK)))',
-	'username' => 'HCIS_NEW',
-	'password' => 'HCIS_NEW',
+	'hostname' => 'localhost',
+	'username' => '',
+	'password' => '',
 	'database' => '',
-	'dbdriver' => 'oci8',
-	'dbprefix' => 'CA_',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
