@@ -1,0 +1,10 @@
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (11, '-', 'N', '19/06/2020 0101:0606:1717', 'DEFAULT', NULL, NULL);
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (6, 'BLACK ON AIR', 'Y', '19/12/2019 1010:1212:3636', 'DEFAULT', '03/01/2020 0303:0101:5454', 'DEFAULT');
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (8, 'FROZEN ON AIR', 'Y', '09/01/2020 1010:0101:1313', 'DEFAULT', NULL, NULL);
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (9, 'AUDIO PROBLEM', 'Y', '06/04/2020 0101:0404:3131', 'DEFAULT', '24/06/2020 1111:0606:4747', 'DEFAULT');
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (10, 'MISSING SUBTITLE', 'Y', '18/06/2020 0606:0606:3333', 'DEFAULT', NULL, NULL);
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (12, 'OTHER', 'Y', '19/06/2020 0101:0606:3030', 'DEFAULT', NULL, NULL);
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (13, 'INTERMITTENT SIGNAL DISTORTION', 'Y', '19/06/2020 0101:0606:5858', 'DEFAULT', '19/06/2020 0101:0606:5757', 'DEFAULT');
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (14, 'NO ON AIR OUTAGE', 'Y', '19/06/2020 0101:0606:4848', 'DEFAULT', NULL, NULL);
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (15, 'STILL BUMPER', 'Y', '19/06/2020 0101:0606:0606', 'DEFAULT', NULL, NULL);
+INSERT INTO `onar_outagelist` (`id`, `outage_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (16, 'TSUNAMI STILL', 'Y', '19/06/2020 0101:0606:2020', 'DEFAULT', NULL, NULL);

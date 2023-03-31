@@ -1,0 +1,1 @@
+INSERT INTO `onar_follow_date` (`id`, `id_report`, `follow_up_date`, `description`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (12, 75, '2020-07-11', 'cek lagi', '09/07/2020 0606:0707:4444', 'DEFAULT', NULL, NULL);

@@ -1,0 +1,3 @@
+INSERT INTO `onar_status` (`id`, `status_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (1, 'OPEN', 'Y', '09/01/2020 1010:0101:5454', 'DEFAULT', '24/06/2020 1111:0606:3535', 'DEFAULT');
+INSERT INTO `onar_status` (`id`, `status_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (2, 'SOLVE', 'Y', '17/12/2019 0404:1212:4242', 'DEFAULT', '14/01/2020 0202:0101:0303', 'DEFAULT');
+INSERT INTO `onar_status` (`id`, `status_name`, `status`, `created_date`, `created_by`, `updated_date`, `updated_by`) VALUES (3, 'UNSOLVE', 'Y', NULL, NULL, '15/01/2020 0202:0101:3939', 'DEFAULT');

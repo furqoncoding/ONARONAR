@@ -253,8 +253,8 @@
 					<a href="<?php echo site_url('report/report_list') ?>">Cancel</a>
 				</button>
 				<button type="submit" class="btn btn-success">
-					<href="<?php echo base_url().'index.php/report/report_list/'?>"><?php echo $button; ?> 
-					</button>
+				  <?php echo $button; ?> 
+				</button>
 				</div>
 			</center>
 		</form>

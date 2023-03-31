@@ -1,4 +1,3 @@
-
 <div class="content-body">
 	<!-- Full calendar basic example section start -->
 	<section id="basic-examples">
@@ -16,16 +15,24 @@
 							</ul>
 						</div>
 					</div>
-					<?php foreach ($row as $data) { ?>
-					<div class="card-content collapse show">
-						<div class="card-body">
-							<div id='fc-default-1'></div>
-					<?php } ?>
-						</div>
-					</div>
+					<?php
+					if (!empty($row)) {
+						foreach ($row as $data) {
+					?>
+							<div class="card-content collapse show">
+								<div class="card-body">
+									<div id='fc-default-1'></div>
+								<?php }
+						} else { ?>
+								<div class="card-content collapse show">
+									<div class="card-body">
+										<div id='fc-default-1'></div>
+									<?php } ?>
+									</div>
+								</div>
+								</div>
+							</div>
 				</div>
-			</div>
-		</div>
 	</section>
 	<!-- // Full calendar basic example section end -->
 </div>
